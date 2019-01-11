@@ -15,6 +15,26 @@ body {
   font-size:1.4rem;
   font-family:Raleway, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
 }
+.heading{
+  position:relative;
+  display:inline-block;
+  margin:30px 0 15px;
+  padding:bottom:15px;
+  letter-spacing:2px;
+  font-size:4rem;
+}
+.heading::before,
+.heading::after {
+  content:'';
+  position:absolute;
+  right:0;
+  bottom:0;
+  left:0;
+  border-bottom:1px solid #999;
+}
+.heading::before{
+  bottom:5px;
+}
 /* ヘッダー */
 .header {
   padding:170px 30px 80px;
@@ -62,4 +82,14 @@ body {
 }
 .buttons .button{
   margin:10px;
+}
+/* about me */
+.about {
+  padding:80px 30px;
+  background-color:#fff;
+  color:#333;
+}
+.about-text {
+  margin:30px 0;
+  line-height:2.5;
 }
